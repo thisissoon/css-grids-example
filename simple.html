@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <!-- required meta tags needed for bootstrap styling to work properly -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CSS Grid Tutorial</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>
+      /* some extra styles so we can see the grid */
+      [class*="col"]{
+        border: 1px solid #f0f0f0;
+        min-height: 85px;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-xs-4">
+          <button class="btn">Menu</button>
+        </div>
+        <div class="col-md-6 hidden-xs text-center">
+          <img src="https://placehold.it/150x75" alt="My image">
+        </div>
+        <div class="col-md-3 col-xs-8 text-right">
+          <a href="/login">Login</a>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

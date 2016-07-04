@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Grids</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <style>
+      .header {
+        background-image:url(//lorempixel.com/image_output/city-q-c-640-480-3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        max-width: 1400px;
+        margin: auto;
+      }
+
+      .login-link {
+        text-align: left;
+      }
+      /* This is how we define styles for devices */
+      @media (min-width: 768px) {
+        .login-link {
+          text-align: right;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="header">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <button class="btn">Menu</button>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="//placehold.it/150x75" alt="my image">
+          </div>
+          <div class="col-md-3 login-link">
+            <a href="/login">Login</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
